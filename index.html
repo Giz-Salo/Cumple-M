@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🎉 Feliz Cumpleaños 💚🩷</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- PANTALLA 1: PORTADA -->
+  <section class="section active" id="pantalla1">
+    <img src="fondo.jpeg" class="fondo" alt="Portada">
+    <div class="content">
+      <h1>🎉 ¡Feliz Cumpleaños! 💚🩷</h1>
+      <h3>Que tengas un excelente mes de cumpleaños<br>y que todos tus deseos se hagan realidad</h3>
+      <div class="btns">
+        <button class="nav-btn green" onclick="toggleMusic()">🎵 Reproducir/Pausar</button>
+        <button class="nav-btn pink" onclick="nextSection()">Siguiente ➡️</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- PANTALLA 2: INTRO -->
+  <section class="section" id="pantalla2">
+    <img src="fondo2.jpg" class="fondo" alt="Intro">
+    <div class="content">
+      <h2>💌 Espero te agrade este pequeño detalle,<br>
+      un recordatorio de lo especial que eres<br>
+      y de los momentos lindos que compartimos.</h2>
+      <div class="btns">
+        <button class="nav-btn pink" onclick="prevSection()">⬅️ Atrás</button>
+        <button class="nav-btn green" onclick="toggleMusic()">🎵 Reproducir/Pausar</button>
+        <button class="nav-btn pink" onclick="nextSection()">Siguiente ➡️</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- PANTALLA 3: MENSAJE PRINCIPAL -->
+  <section class="section" id="pantalla3">
+    <img src="pastel1.jpg" class="fondo" alt="Mensaje principal">
+    <div class="content">
+      <h2>🎂 Deseo que tengas un día maravilloso,<br>
+      lleno de alegría, amor y sonrisas.<br><br>
+      ✨ Con cariño, Castillo 💚</h2>
+      <div class="btns">
+        <button class="nav-btn pink" onclick="prevSection()">⬅️ Atrás</button>
+        <button class="nav-btn green" onclick="toggleMusic()">🎵 Reproducir/Pausar</button>
+        <button class="nav-btn pink" onclick="nextSection()">Siguiente ➡️</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- PANTALLA 4: REEL DE FOTOS -->
+  <section class="section" id="pantalla4">
+    <div class="content">
+      <!-- Imagen de portada del reel -->
+
+      <!-- Reel de fotos -->
+      <div class="reel-container">
+        <img id="reel-photo" src="foto1.jpg" alt="Foto 1">
+      </div>
+
+      <div class="btns">
+        <button class="nav-btn pink" onclick="prevSection()">⬅️ Atrás</button>
+        <button class="nav-btn green" onclick="toggleMusic()">🎵 Reproducir/Pausar</button>
+        <button class="nav-btn pink" onclick="nextSection()">Siguiente ➡️</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- PANTALLA 5: FINAL -->
+  <section class="section" id="pantalla5">
+    <img src="fondo.jpeg" class="fondo" alt="Final">
+    <div class="content">
+      <h2>🌟 Gracias por ser tan especial.<br>💚🩷 ¡Te quiero mucho! 🌟</h2>
+      <div class="btns">
+        <button class="nav-btn pink" onclick="prevSection()">⬅️ Atrás</button>
+        <button class="nav-btn green" onclick="music.pause()">⏹️ Detener Música</button>
+      </div>
+    </div>
+  </section>
+
+  <audio id="bg-music" src="cancionmy.m4a" loop></audio>
+  <script src="script.js"></script>
+</body>
+</html>
